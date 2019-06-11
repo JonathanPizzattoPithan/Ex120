@@ -10,6 +10,8 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+	private App Helo;
+	
     /**
      * Create the test case
      *
@@ -31,6 +33,15 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
+    
+    public void setUp() {
+    	Helo = new App();
+    }
+    
+    public void testString() {
+    	assertEquals("Hello, World", Helo.TesteA(null));
+    }
+    
     public void testApp()
     {
         assertTrue( true );
