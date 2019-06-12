@@ -10,19 +10,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class NumerosAleatorios{
 
-    public static void main(String[] args) {
+    public int NumerosA(int N1) {
         
-    	int NumeroAleatorio;
     	int M1;
     	Random r = new Random();
     	M1 = r.nextInt(100);
     	if(M1 > 60) {
-    		NumeroAleatorio = 60;
+    		N1 = 60;
     	}else {
-    		NumeroAleatorio = M1;
+    		N1 = M1;
     	}
     	
-    	System.out.println(NumeroAleatorio);
+    	return N1;
     	
     }
 }
